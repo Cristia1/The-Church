@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <!-- <embed src="PDF.pdf" type="application/pdf" width="100%" height="100px" /> -->
+    <script src="httpps://mozilla.github.io/pdf.js/bulid/pdf.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Page Title</title>
+</head>
+<body>
+   
+  <div class="Monetar right"> 
+    <h2 style="font-size: 60px">Monetar</h2>
+    
+    
+
+    <form > 
+        <div>
+            <input for="500" type="number" class="input-left1" placeholder="Număr" oninput="adaugaLaTotal1()" style="width: 50px">
+            <button onclick="adaugaLaTotal1()">500x</button>
+            <input type="text" id="total-input1">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="200" type="number" id="input-left2" placeholder="Număr" oninput="actualizeazaTotal2()" style="width: 50px">
+            <button onclick="actualizeazaTotal2()">200x</button>
+            <input type="text" id="total-input-2" style="width: 70px">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="100" type="number" class="input-left3" placeholder="Număr" oninput="adaugaLaTotal3()" style="width: 50px">
+            <button onclick="adaugaLaTotal3()">100x</button>
+            <input type="text" id="total-input-3" style="width: 70px">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="50" type="number" class="input-left4" placeholder="Număr" oninput="adaugaLaTotal4()" style="width: 50px">
+            <button onclick="adaugaLaTotal4()">50x</button>
+            <input type="text" id="total-input-4" style="width: 77px">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="10" type="number" class="input-left5" placeholder="Număr" oninput="adaugaLaTotal5()" style="width: 50px">
+            <button onclick="adaugaLaTotal5()">10x</button>
+            <input type="text" id="total-input-5" style="width: 78px">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="5" type="number" class="input-left6" placeholder="Număr" oninput="adaugaLaTotal6()" style="width: 50px">
+            <button onclick="adaugaLaTotal6()">5x</button>
+            <input type="text" id="total-input-6" style="width: 85px">
+        </div>
+
+        <div class="input-wrapper">
+            <input for="1" type="number" class="input-left7" placeholder="Număr" oninput="adaugaLaTotal7()" style="width: 50px">
+            <button onclick="adaugaLaTotal7()">1x</button>
+            <input type="text" id="total-input-7" style="width: 85px">
+        </div>
+        <input type="button" onclick="downloadPDF()">Submit & Download PDF</input>
+
+    </div>
+    <div class=" right">
+        <h2 style="font-size: 50px;">Total:</h2>
+        <p id="total2"></p>
+    </div>
+
+
+
+    
+ 
+    <div class="ziua2" style="font-size: 40px">Semnatura</div>
+    <div >
+      
+
+    <div class="Contributie left">
+        <h1 class="Contributie" style="font-size: 60px">Contributie</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nume">Nume:</label>
+                            </td>
+                                <td>
+                                    <input type="text" name="nume" id="nume">
+                                </td>
+                            </tr>
+                        <tr>
+                    <td>
+                        <label for="bani">Bani (RON):</label>
+                            </td>
+                                <td>
+                                    <input type="number" name="bani" id="bani">
+                                    </td>
+                                </tr>
+                            <tr>
+                        <td colspan="2">
+                    <button type="button" onclick="afiseazaTotalBiserica()">Adaugă</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    </div>
+        <table style="font-size: 20px" id="tabelRezultate" class="Contributie misloc">
+            <tr >
+                <th>Nume</th>
+                <th>Bani</th>
+            </tr>
+        </table>
+            <p class="Contributie misloc" style="font-size: 30px">Total: <span id="totalBani"></span> RON</p>
+            <p class="ziua1">
+                <h2 id="currentDate1"></h2></p></div>
+        </form>
+    </body>
+</html>
