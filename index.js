@@ -1,110 +1,167 @@
 //aici scrii codul js pentru caplicatia ta pentru prima tabel
 
-var totalMonetar = 0;
-var totalBani = 0;
-var totalPungi = 0;
-var totalPensula = 0;
-var totalButon = 0;
-var totalBisa = 0;
-var totalBere = 0;
+var global1 = 0;
+var global2 = 0;
+var global3 = 0;
+var global4 = 0;
+var global5 = 0;
+var global6 = 0;
+var global7 = 0;
 
 function updateTotal() {
-    var total = totalMonetar + totalBani + totalPungi + totalPensula + totalButon + totalBisa + totalBere;
+    var totalAll = global1 + global2 + global3 + global4 + global5 + global6 + global7;
     var totalElement = document.getElementById("total2");
-    totalElement.innerHTML = total;
+    totalElement.innerHTML = totalAll;
 }
 
-function adaugaLaTotal1() {
-    var inputLeft = document.getElementsByClassName("input-left1")[0];
-    var valoare = parseInt(inputLeft.value);
-    var valoareAdaugata = valoare * 500;
 
-    totalMonetar += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input1");
-    inputTotal.value = totalMonetar;
-    updateTotal();
-}
 
-function actualizeazaTotal2() {
-    var inputStanga1 = document.getElementById("input-left2");
-    var valoare = parseInt(inputStanga1.value);
-    var valoareAdaugata = valoare * 200;
+function input1() {
+    var bis1 = 0;
+    var inputCon1 = document.getElementsByClassName("input-left1");
+    var rest1 = 0;
 
-    totalBani += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-2");
-    inputTotal.value = totalBani;
-    updateTotal();
-}
+    for (var i = 0; i < inputCon1.length; i++) {
+        var inputLeft1 = inputCon1[i];
+        var change1 = inputLeft1.value * 500;
+        rest1 += change1;
+    }
 
-function adaugaLaTotal3() {
-    var inputLeft2 = document.getElementsByClassName("input-left3")[0];
-    var valoare = parseInt(inputLeft2.value);
-    var valoareAdaugata = valoare * 100;
-
-    totalPungi += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-3");
-    inputTotal.value = totalPungi;
-    updateTotal();
-}
-
-function adaugaLaTotal4() {
-    var inputLeft3 = document.getElementsByClassName("input-left4")[0];
-    var valoare = parseInt(inputLeft3.value);
-    var valoareAdaugata = valoare * 50;
-
-    totalPensula += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-4");
-    inputTotal.value = totalPensula;
-    updateTotal();
-}
-
-function adaugaLaTotal5() {
-    var inputLeft4 = document.getElementsByClassName("input-left5")[0];
-    var valoare = parseInt(inputLeft4.value);
-    var valoareAdaugata = valoare * 10;
-
-    totalButon += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-5");
-    inputTotal.value = totalButon;
-    updateTotal();
-}
-
-function adaugaLaTotal6() {
-    var inputLeft5 = document.getElementsByClassName("input-left6")[0];
-    var valoare = parseInt(inputLeft5.value);
-    var valoareAdaugata = valoare * 5;
-
-    totalBisa += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-6");
-    inputTotal.value = totalBisa;
-    updateTotal();
-}
-function adaugaLaTotal7() {
-    var inputLeft6 = document.getElementsByClassName("input-left7")[0];
-    var valoare = parseInt(inputLeft6.value);
-    var valoareAdaugata = valoare * 1;
-
-    totalBere += valoareAdaugata;
-    var inputTotal = document.getElementById("total-input-7");
-    inputTotal.value = totalBere;
+    bis1 = change1;
+    var inputTotal1 = document.getElementById("Monetar-equal1");
+    inputTotal1.value = bis1;
+    global1 = bis1;
     updateTotal();
 }
 
 
 
+function input2() {
+    var bis2 = 0;
+    var inputCon2 = document.getElementsByClassName("input-left2");
+    var rest2 = 0;
+
+    for (var i = 0; i < inputCon2.length; i++) {
+        var inputLeft2 = inputCon2[i];
+        var change2 = inputLeft2.value * 200;
+        rest2 += change2;
+    }
+
+    bis2 += change2;
+    var inputTotal2 = document.getElementById("Monetar-equal2");
+    inputTotal2.value = bis2;
+    global2 = bis2;
+    updateTotal();
+}
+
+
+function input3() {
+    var bis3 = 0;
+    var inputCon3 = document.getElementsByClassName("input-left3");
+    var rest3 = 0;
+
+    for (var i = 0; i < inputCon3.length; i++) {
+        var inputLeft3 = inputCon3[i];
+        var change3 = inputLeft3.value * 100;
+        rest3 += change3;
+    }
+    bis3 += change3;
+    var inputTotal3 = document.getElementById("Monetar-equal3");
+    inputTotal3.value = bis3;
+    global3 = bis3;
+    updateTotal();
+}
 
 
 
-//asta este pentru al doilea input cu nume
+function input4() {
+    var bis4 = 0;
+    var inputCon4 = document.getElementsByClassName("input-left4");
+    var rest4 = 0;
+
+    for (i = 0; i < inputCon4.length; i++) {
+        var inputLeft4 = inputCon4[i];
+        var change4 = inputLeft4.value * 50;
+        rest4 += change4;
+    }
+
+    bis4 += change4;
+    var inputTotal4 = document.getElementById("Monetar-equal4");
+    inputTotal4.value = bis4;
+    global4 = bis4;
+    updateTotal();
+}
+
+function input5() {
+    var bis5 = 0;
+    var inputCon5 = document.getElementsByClassName("input-left5");
+    var rest5 = 0;
+
+    for (i = 0; i < inputCon5.length; i++) {
+        var inputLeft5 = inputCon5[i];
+        var change5 = inputLeft5.value * 10;
+        rest5 += change5;
+    }
+
+
+    bis5 += change5;
+    var inputTotal5 = document.getElementById("Monetar-equal5");
+    inputTotal5.value = bis5;
+    global5 = bis5;
+    updateTotal();
+}
+
+
+function input6() {
+    var bis6 = 0;
+    var inputCon6 = document.getElementsByClassName("input-left6");
+    var rest6 = 0;
+
+    for (i = 0; i < inputCon6.length; i++) {
+        var inputLeft6 = inputCon6[i];
+        var change6 = inputLeft6.value * 5;
+        rest6 += change6;
+    }
+
+    bis6 += change6;
+    var inputTotal6 = document.getElementById("Monetar-equal6");
+    inputTotal6.value = bis6;
+    global6 = bis6;
+    updateTotal();
+}
+
+
+function input7() {
+    var bis7 = 0;
+    var inputCon7 = document.getElementsByClassName("input-left7");
+    var rest7 = 0;
+
+    for (i = 0; i < inputCon7.length; i++) {
+        var inputLeft7 = inputCon7[i];
+        var change7 = inputLeft7.value * 1;
+        rest7 += change7;
+    }
+
+
+    bis7 += change7;
+    var inputTotal7 = document.getElementById("Monetar-equal7");
+    inputTotal7.value = bis7;
+    global7 = bis7;
+    updateTotal();
+}
+
+
+
+//asta este pentru al doilea input cu NUME
 
 
 var totalBani = 0; // Variabila pentru a stoca totalul banilor
 
-function afiseazaTotalBiserica() {
+function contributie() {
     var inputNume = document.getElementById("nume");
     var inputBani = document.getElementById("bani");
-    var tabelRezultate = document.getElementById("tabelRezultate");
-    var totalBaniElement = document.getElementById("totalBani"); // Elementul pentru afișarea totalului
+    var tabelRezultate = document.getElementById("tabelContributie");
+    var totalBaniElement = document.getElementById("totalBaniContributie"); // Elementul pentru afișarea totalului
 
     var nume = inputNume.value;
     var bani = inputBani.value ? parseFloat(inputBani.value) : 0;
@@ -146,149 +203,120 @@ window.onload = function () {
 
 };
 
-
-
 // aici este butonul care descarcaa
 // aici este pdf 
 
-// function downloadPDF() {
-//     var nume = document.getElementById('nume').value;
-//     var bani = document.getElementById('bani').value;
-//     var input1 = document.getElementById('total-input1').value;
-//     var input2 = document.getElementById('total-input2').value;
-//     var input3 = document.getElementById('total-input3').value;
-//     var input4 = document.getElementById('total-input4').value;
-//     var input5 = document.getElementById('total-input5').value;
-//     var input6 = document.getElementById('total-input6').value;
-//     var input7 = document.getElementById('total-input7').value;
-//     var TotalMonetar = document.getElementById('total2').textContent;
-//     var TotalContributie = document.getElementById('totalBani').textContent;
-//     // console.log(nume);
-//     var pdf = new jsPDF();
 
-//     console.log(bani);
-//     pdf.text(20, 20, "Nume: " + numeValue);
-//     pdf.text(20, 30, "Bani (RON): " + baniValue);
-//     pdf.text(20, 40, "Input1: " + input1Value);
-//     pdf.text(20, 50, "Input2: " + input2Value);
-//     pdf.text(20, 60, "Input3: " + input3Value);
-//     pdf.text(20, 70, "Input4: " + input4Value);
-//     pdf.text(20, 80, "Input5: " + input5Value);
-//     pdf.text(20, 90, "Input6: " + input6Value);
-//     pdf.text(20, 100, "Input7: " + input7Value);
-//     pdf.text(20, 110, "Total monetar: " + TotalMonetar);
-//     pdf.text(20, 120, "Total contribuție: " + TotalContributie);
+// index.js
+function generatePDF() {
+    const nume = document.getElementById('nume').value;
+    const bani = document.getElementById('bani').value;
+    const totalInputs = document.querySelectorAll('[id^="total-input"]');
+    const totalMonetar = document.getElementById('total2').textContent;
+    const totalContributie = document.getElementById('tabelContributie').textContent;
+    const semnatura = document.getElementById('semnatura').textContent;
+    const data = document.getElementById('currentDate1').textContent;
 
-//     // Adăugați aici alte informații în fișierul PDF
-//     var numeValue = document.getElementById('nume').value;
-//     var baniValue = document.getElementById('bani').value;
+    let tableHtml = '';
 
-//     var input1Value = document.getElementById('total-input1').value;
-//     var input2Value = document.getElementById('total-input2').value;
-//     var input3Value = document.getElementById('total-input3').value;
-//     var input4Value = document.getElementById('total-input4').value;
-//     var input5Value = document.getElementById('total-input5').value;
-//     var input6Value = document.getElementById('total-input6').value;
-//     var input7Value = document.getElementById('total-input7').value;
+    const items = Array.from(totalInputs);
 
-//     var TotalMonetar = document.getElementById('total2').textContent;
-//     var TotalContributie = document.getElementById('totalBani').textContent;
+    for (let i = 0; i < items.length; i += 2) {
+        const name = items[i].value;
+        const amount = items[i + 1].value;
 
-//     // var tabelRezultate = document.getElementById('tabelRezultate');
-//     // var tabelRows = tabelRezultate.getElementsByTagName('tr');
-//     var tabelData = [];
-//     // console.log(tabelRows);
-//     // Colectați informațiile din tabelul de rezultate
-//     for (var i = 1; i < tabelRows.length; i++) {
-//         var cells = tabelRows[i].getElementsByTagName('td');
-//         var rowData = {
-//             nume: cells[0].innerText,
-//             bani: cells[1].innerText
-//         };
-//         tabelData.push(rowData);
-//     }
+        tableHtml += `
+        <tr>
+          <td>${name}</td>
+          <td>${amount} RON</td>
+        </tr>
+      `;
+    }
 
+    const htmlContent = `
+      <style>
+      
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+  
+        .monetar {
+          margin: auto;
+        }
+  
+        .contributie {
+          margin-top: 80px;
+          margin-bottom: 50px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        .Contributie th {
+          text-align: left;
+        }
+  
+        .contributie td {
+            display: grid;
+            margin-left: 1000px;
+            display: block;
+            margin-block-end: 10;
+        }
+  
+        .semnatura {
+          text-align: center;
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      </style>
+  
+    <table class="monetar">
+        <tr>
+          <th style="font-size: 40px;" colspan="2">Monetar</th>
+        </tr>
+        <tr>
+          <td>${bani} -></td>
+          <td>${totalMonetar} RON</td>
+        </tr>
+        <tr>
+          <td>${nume}</td>
+        </tr>
+    </table>
+  
+      <table class="contributie">
+        <tr>
+          <th style="font-size: 40px;" colspan="2">contributie</th>
+        </tr>
+        ${tableHtml}
+        <tr>
+          <td><strong>${totalContributie} RON</strong></td>
+        </tr>
+      </table>
+  
+      <div class="semnatura">
+        <table>
+          <tr>
+            <td>${semnatura}</td>
+            <td>${data}</td>
+          </tr>
+        </table>
+      </div>
+    `;
 
-//     pdf.save("PDF.pdf");
-// }
+    const options = {
+        filename: 'file.pdf',
+        html2canvas: { scale: 2 },
+        jsPDF: { orientation: 'portrait' }
+    };
 
-
-const url = "/PDF.pdf";
-
-(async function () {
-  // Specify the workerSrc property
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "//mozilla.github.io/pdf.js/build/pdf.worker.js";
-
-  // Create the PDF document
-  const doc = await pdfjsLib.getDocument(url).promise;
-
-  // Get the input values from the form
-  const nume = document.getElementById('nume').value;
-  const bani = document.getElementById('bani').value;
-  const input1 = document.getElementById('total-input1').value;
-  const input2 = document.getElementById('total-input-2').value;
-  const input3 = document.getElementById('total-input-3').value;
-  const input4 = document.getElementById('total-input-4').value;
-  const input5 = document.getElementById('total-input-5').value;
-  const input6 = document.getElementById('total-input-6').value;
-  const input7 = document.getElementById('total-input-7').value;
-  const totalMonetar = document.getElementById('total2').textContent;
-  const totalContributie = document.getElementById('totalBani').textContent;
-
-  // Generate the document content
-  const documentContent = `
-    Nume: ${nume}
-    Bani: ${bani}
-    Input1: ${input1}
-    Input2: ${input2}
-    Input3: ${input3}
-    Input4: ${input4}
-    Input5: ${input5}
-    Input6: ${input6}
-    Input7: ${input7}
-    Total Monetar: ${totalMonetar}
-    Total Contributie: ${totalContributie}
-  `;
-
-  // Get the page content
-  const pageContent = await getPageContent(doc, 1);
-
-  // Merge the page content with the document content
-  const mergedContent = `${pageContent}\n\n${documentContent}`;
-
-  // Display the merged content in a textarea
-  const textarea = document.createElement('textarea');
-  textarea.value = mergedContent;
-  document.body.appendChild(textarea);
-})();
-
-async function getPageContent(doc, pageNumber) {
-  if (pageNumber >= 1 && pageNumber <= doc._pdfInfo.numPages) {
-    // Fetch the page
-    const page = await doc.getPage(pageNumber);
-
-    // Get the text content of the page
-    const content = await page.getTextContent();
-
-    // Extract the text from the content
-    return content.items.map(item => item.str).join(' ');
-  } else {
-    console.log("Please specify a valid page number");
-    return "";
-  }
+    html2pdf().from(htmlContent).set(options).save();
 }
 
-function downloadPDF() {
-  // Get the merged content from the textarea
-  const textarea = document.querySelector('textarea');
-  const mergedContent = textarea.value;
 
-  // Create a new Blob with the merged content
-  const blob = new Blob([mergedContent], { type: 'application/pdf' });
 
-  // Create a download link and trigger the download
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = 'document.pdf';
-  link.click();
-}
+
