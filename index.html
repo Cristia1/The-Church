@@ -1,118 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
-       
-        
-        <!-- Link-urile către fișierele CSS ale Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
-        <!-- Alte elemente din head -->
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+    <!-- Alte link-uri CSS -->
     <link rel="stylesheet" href="styles.css">
+  
+    <!-- Biblioteca html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  
+    <!-- Fișierul JS personalizat -->
     <script src="index.js"></script>
+    
     <title>Page Title</title>
 </head>
 <body>
    
-  <div class="Monetar right"> 
-    <h2 style="font-size: 60px">Monetar</h2>
-    
-    
-    <form  class="elem"> 
-        <div class="input-wrapper">
+    <div class="monetar right">
+        <h2 style="font-size: 60px">Monetar</h2>
+      
+        <form class="elem">
+          <div class="input-wrapper">
             <input type="number" class="input-left1" placeholder="X" oninput="input1()" style="width: 50px">
             <button for="500">500x</button>
             <input type="number" id="Monetar-equal1" style="width: 70px">
-        </div>
-        
-
-        <div class="input-wrapper">
+          </div>
+      
+          <div class="input-wrapper">
             <input type="number" class="input-left2" placeholder="X" oninput="input2()" style="width: 50px">
             <button for="200">200x</button>
             <input type="number" id="Monetar-equal2" style="width: 70px">
-        </div>
-        
-
-        <div class="input-wrapper">
+          </div>
+      
+          <div class="input-wrapper">
             <input type="number" class="input-left3" placeholder="X" oninput="input3()" style="width: 50px">
             <button for="100">100x</button>
-            <input type="number" id="Monetar-equal3" style="width: 70px">
-        </div>
-
-
-        <div class="input-wrapper">
+            <input type="number" id="Monetar-equal3" style="width: 71px">
+          </div>
+      
+          <div class="input-wrapper">
             <input type="number" class="input-left4" placeholder="X" oninput="input4()" style="width: 50px">
             <button for="50">50x</button>
-            <input type="number" id="Monetar-equal4" style="width: 77px">
-        </div>
-
-
-        <div class="input-wrapper">
-            <input  type="number" class="input-left5" placeholder="X" oninput="input5()" style="width: 50px">
+            <input type="number" id="Monetar-equal4" style="width: 79px">
+          </div>
+      
+          <div class="input-wrapper">
+            <input type="number" class="input-left5" placeholder="X" oninput="input5()" style="width: 50px">
             <button for="10">10x</button>
-            <input type="number" id="Monetar-equal5" style="width: 78px">
-        </div>
-
-
-        <div class="input-wrapper">
+            <input type="number" id="Monetar-equal5" style="width: 82px">
+          </div>
+      
+          <div class="input-wrapper">
             <input type="number" class="input-left6" placeholder="X" oninput="input6()" style="width: 50px">
             <button for="5">5x</button>
-            <input type="number" id="Monetar-equal6" style="width: 85px">
-        </div>
-
-
-        <div class="input-wrapper">
-            <input  type="number" class="input-left7" placeholder="X" oninput="input7()" style="width: 50px">
-            <button for="1">1x</button>
-            <input type="number" id="Monetar-equal7" style="width: 85px">
-        </div>
+            <input type="number" id="Monetar-equal6" style="width: 89px">
+          </div>
       
-
-        <input class="pdf" type="button" value="Descarca PDF" onclick="generatePDF()" />
-
+          <div class="input-wrapper">
+            <input type="number" class="input-left7" placeholder="X" oninput="input7()" style="width: 50px">
+            <button for="1">1x</button>
+            <input type="number" id="Monetar-equal7" style="width: 92px">
+          </div>
+        </form>
     </div>
+         
+        
+      
     <div class=" right">
         <h2 style="font-size: 50px;">Total:</h2>
-        <p id="total2"></p>
-    </div>
+        <p id="total2"></p></div>
 
-
-    <div for="semnatura" type="text" id="semnatura" name="semnatura" class="ziua2" style="font-size: 40px">Semnatura</div><div >
+    <div for="semnatura" type="text" id="semnatura" name="semnatura"
+     class="date2" style="font-size: 40px">Semnatura</div><div >
       
+        
+        
 
         <div class="Contributie left">
             <h1 class="Contributie" style="font-size: 60px">Contributie</h1>
             <table>
                 <tr>
                     <td>
-                        <label for="nume">Nume:</label>
+                        <label>Nume:</label>
                     </td>
                     <td>
-                        <input type="text" name="nume" id="nume">
+                        <input for="nume" class="nume" type="text" name="nume" id="nume">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="bani">Bani (RON):</label>
+                        <label>Bani (RON):</label>
                     </td>
                     <td>
-                        <input type="number" name="bani" id="bani">
+                        <input for="bani" class="bani" type="" name="bani" id="bani">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button class="adauga" type="button" onclick="contributie()">Adaugă</button>
+                        <button class="adauga" type="button" onclick="contributie()">Adauga</button>
                     </td>
                 </tr>
             </table>
         </div>
-        
+        <input class="pdf" type="button" value="Descarca PDF" onclick="generatePDF()"></input>
         <div>
         </div>
         
@@ -123,12 +114,13 @@
             </tr>
         </table>
         
-        <p class="Contributie misloc" style="font-size: 30px">Total: <span id="totalBaniContributie"></span> RON</p>
+        <p class="Contributie misloc" style="font-size: 30px" id="churchTotal">Total: <span id="totalBaniContributie"></span> RON</p>
        
         </div>
 
-        <div class="date"><p class="ziua1">
+        <div class="date"><p class="date1">
             <h2 id="currentDate1"></h2>
         </p></div>
     </body>
 </html>
+
